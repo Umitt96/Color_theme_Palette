@@ -1,0 +1,62 @@
+        
+/* renkler */
+:root{ --main-color: #fbb603;}
+.bg1{ background-color: #77f9ef;}
+.bg2{ background-color: #03d0ed;}
+.bg3{ background-color: #00cf56;}
+.bg4{ background-color: #92b210;}
+.bg5{ background-color: #babbba;}
+.bg6{ background-color: #f65524;}
+.bg7{ background-color: #fbb603;}
+.bg8{ background-color: #fff000;}
+.bg9{ background-color: #fff;}
+.bg10{ background-color: #000;}
+
+body{
+  background-color: var(--main-color);
+}
+.color-switcher{
+  position: fixed;
+  top: 140px; left: -105px;
+  width: 80px;
+  height: 150px;
+  padding: 10px;
+  z-index: 99;
+  border: #000 solid 2px;
+  transition: .4s;
+  background-color: rgba(0,0,0,.5);
+}
+
+.color-switcher.active{
+  left: 0px;
+}
+
+.color-switcher .switcher-btn{
+  position: absolute;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-align: center;
+  top: 65px;
+  padding: 6px;
+  right: -31px;
+
+  border-radius: 0px 200px 200px 0px;
+  border: 1px inset #000000;
+  transition: 1s;
+}
+
+
+.color-switcher .theme-buttons-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.color-switcher .theme-buttons{
+  display: block;
+  width: 30px;
+  height: 20px;
+  margin: 3px;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
